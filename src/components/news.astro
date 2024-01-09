@@ -1,0 +1,13 @@
+---
+const {url, title} = Astro.props
+---
+
+<object data={url} class="my-8 rounded" type="application/pdf" width="100%" height="500px">
+    <p>No ha sido posible recuperar el pdf, pero puedes descargarlo: <a class="hover:underline hover:text-bustar-orange-300 hover:transition-colors" title={title} href={url}>Descargar</a> sentimos las molestias.</p>
+</object>
+
+<style>
+    object{
+        height: 80vh;
+    }
+</style>

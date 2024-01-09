@@ -20,27 +20,37 @@
     <h1 class="text-2xl font-bold text-slate-300 my-6">Formulario de admisión de socios</h1>
     <label for="name">Nombre</label>
     <input class="rounded p-2 text-black" type="text" required name="name" id="name" placeholder="Nombre"/>
+    <span id="name-errors" class=" text-red-500 rounded"></span>
     <label for="apellidos">Apellidos</label>
     <input class="rounded p-2 text-black" type="text" required name="apellidos" id="apellidos" placeholder="Apellidos"/>
+    <span id="apellido-errors" class=" text-red-500 rounded p-2"></span>
     <label for="mail">Correo electrónico</label>
     <input class="rounded p-2 text-black" type="email" name="email" required id="email" placeholder="Ejemplo@ejemplo.com" />
+    <span id="email-errors" class=" text-red-500 rounded p-2"></span>
     <label for="telefono">Teléfono</label>
     <input class="rounded p-2 text-black" min="0" type="number" required name="telefono" id="telefono" placeholder="Teléfono"/>
+    <span id="telefono-errors" class=" text-red-500 rounded p-2"></span>
     <label for="dirección">Dirección</label>
     <input class="rounded p-2 text-black" type="text" required name="direccion" id="direccion" placeholder="Calle" />
+    <span id="calle-errors" class=" text-red-500 rounded p-2"></span>
     <input class="rounded p-2 text-black" type="number" required min="0" name="numero" id="numero" placeholder="Número" />
+    <span id="numero-errors" class=" text-red-500 rounded p-2"></span>
     <input class="rounded p-2 text-black" type="text" required name="ciudad" id="ciudad" placeholder="Ciudad" />
+    <span id="ciudad-errors" class=" text-red-500 rounded p-2"></span>
     <input class="rounded p-2 text-black" type="text" required name="cp" id="cp" placeholder="Código postal" />
+    <span id="cp-errors" class=" text-red-500 rounded p-2"></span>
     <label for="dni">DNI/NIF</label>
     <input class="rounded p-2 text-black" type="text" required name="dni" id="dni" placeholder="DNI/NIF"/>
+    <span id="dni-errors" class=" text-red-500 rounded p-2"></span>
     <label for="nacimiento">Fecha de nacimiento</label>
     <input class="rounded p-2 text-black" type="text" required name="nacimiento" id="nacimiento" placeholder="DD/MM/AAAA"/>
+    <span id="nacimiento-errors" class=" text-red-500 rounded p-2"></span>
     <label for="observaciones">Observaciones</label>
     <textarea class="rounded p-2 text-black" name="observaciones" id="observaciones" rows="3" placeholder="Comentarios que quieras añadir."></textarea>
     <div class="flex justify-center items-center gap-4">
-    <label for="politica">Acepto la <a class="hover:underline" href="https://www.cdbustarviejo.com/politica-de-privacidad.html">política de privacidad</a></label>
+    <label for="politica">Acepto la <a class="hover:underline hover:text-bustar-orange-300 hover:transition" title="Política de privacidad CD Bustarviejo" href="https://www.cdbustarviejo.com/politica-de-privacidad.html">política de privacidad</a></label>
     <input class="rounded p-2" type="checkbox" required id="politica" name="politica" />
-    <input class="rounded p-2 bg-white text-slate-950 cursor-pointer hover:bg-bustar-orange-300 hover:transition-colors font-bold" type="submit" value="Enviar" />
+    <input class="rounded p-2 bg-white text-slate-950 cursor-pointer border border-transparent hover:bg-bustar-orange-300 hover:transition-colors font-bold" type="submit" value="Enviar" />
     <input class="rounded p-2 border-white border font-bold hover:bg-white hover:text-slate-950 hover:transition-colors cursor-pointer" type="reset" value="Cancelar" />
 </div>
 </div>

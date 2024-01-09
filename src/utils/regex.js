@@ -1,3 +1,4 @@
+export const stringRegex = /^[A-Za-z]+$/
 export const phoneRegex = /^[679]{1}[0-9]{8}$/
 export const dniRegex = /^[0-9]{8}[A-Za-z]$/
 export const mailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/

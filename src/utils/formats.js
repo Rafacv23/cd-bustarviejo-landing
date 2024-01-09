@@ -1,0 +1,6 @@
+export const stringFormat = "No se permiten números ni caracteres especiales"
+export const dniFormat = "12345678X"
+export const nacimientoFormat = "dd/mm/aaaa"
+export const emailFormat = "example@example.com"
+export const cpFormat = "12345"
+export const phoneFormat = "123456789"

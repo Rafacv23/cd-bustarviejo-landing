@@ -1,0 +1,54 @@
+---
+import HeaderBtn from "./header-btn.astro";
+---
+
+<header class="md:hidden header-container flex flex-col justify-center items-center text-black font-bold text-lg fixed top-0 p-4 w-full z-10 bg-bustar-orange-300">
+    <div class="flex justify-center w-full items-center">
+      <!-- Logo and site name for desktop -->
+      <span class="flex flex-row-reverse items-center justify-center gap-4 hamburger-btn">
+        CD BUSTARVIEJO 
+        <img width="50px" src="/public/logo-cd-bustarviejo-cuadrado-xpeq.webp" alt="Logo CD Bustarviejo"/>
+      </span>
+    </div>
+  
+    <!-- Navigation links -->
+    <nav class="flex flex-col md:flex-row md:justify-center md:items-center md:gap-8 mt-4 nav-links hidden">
+      <HeaderBtn name="INICIO" destino="/" title="Páginas de inicio"/>
+      <HeaderBtn name="PROYECTO" destino="/proyecto" title="Página de proyectos"/>
+      <HeaderBtn name="SOCIOS" destino="/socios" title="Página de socios"/>
+      <HeaderBtn name="PATROCINIO" destino="/patrocinio" title="Página de patrocinadores"/>
+      <HeaderBtn name="NOTICIAS" destino="/noticias" title="Página de noticias"/>
+    </nav>
+  </header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburgerBtn = document.querySelector('.hamburger-btn');
+      const navLinks = document.querySelector('.nav-links');
+  
+      // Initialize state
+      let isNavLinksVisible = false;
+  
+      // Function to toggle visibility
+      function toggleNavLinks() {
+        isNavLinksVisible = !isNavLinksVisible;
+        navLinks.classList.toggle('hidden', !isNavLinksVisible);
+      }
+  
+      // Add click event listener to the hamburger button
+      hamburgerBtn.addEventListener('click', toggleNavLinks);
+  
+      // Close the navigation links when clicking outside the menu
+      document.addEventListener('click', function (event) {
+        if (!event.target.closest('.header-container')) {
+          navLinks.classList.add('hidden');
+          isNavLinksVisible = false;
+        }
+      });
+  
+      // Prevent closing the menu when clicking inside it
+      navLinks.addEventListener('click', function (event) {
+        event.stopPropagation();
+      });
+    });
+  </script>
