@@ -1,0 +1,47 @@
+<script>
+    import {validarFormulario} from "../utils/form-validation.js"
+    const enviarFormulario = () => {
+    const formSocios = document.getElementById("form-socios");
+
+    formSocios.addEventListener("submit", (event) => {
+        event.preventDefault()
+        if(validarFormulario()){
+        console.log("Formulario enviado")
+        window.location.href = "/enviado"
+        } else{
+            console.log("El formulario no se ha podido enviar")
+        }
+    })}
+
+    document.addEventListener("DOMContentLoaded", () => {enviarFormulario()})
+</script>
+
+<form method="post" class="flex flex-col gap-4 justify-items-start justify-center" id="form-socios">
+    <h1 class="text-2xl font-bold text-slate-300 my-6">Formulario de admisión de socios</h1>
+    <label for="name">Nombre</label>
+    <input class="rounded p-2 text-black" type="text" required name="name" id="name" placeholder="Nombre"/>
+    <label for="apellidos">Apellidos</label>
+    <input class="rounded p-2 text-black" type="text" required name="apellidos" id="apellidos" placeholder="Apellidos"/>
+    <label for="mail">Correo electrónico</label>
+    <input class="rounded p-2 text-black" type="email" name="email" required id="email" placeholder="Ejemplo@ejemplo.com" />
+    <label for="telefono">Teléfono</label>
+    <input class="rounded p-2 text-black" min="0" type="number" required name="telefono" id="telefono" placeholder="Teléfono"/>
+    <label for="dirección">Dirección</label>
+    <input class="rounded p-2 text-black" type="text" required name="direccion" id="direccion" placeholder="Calle" />
+    <input class="rounded p-2 text-black" type="number" required min="0" name="numero" id="numero" placeholder="Número" />
+    <input class="rounded p-2 text-black" type="text" required name="ciudad" id="ciudad" placeholder="Ciudad" />
+    <input class="rounded p-2 text-black" type="text" required name="cp" id="cp" placeholder="Código postal" />
+    <label for="dni">DNI/NIF</label>
+    <input class="rounded p-2 text-black" type="text" required name="dni" id="dni" placeholder="DNI/NIF"/>
+    <label for="nacimiento">Fecha de nacimiento</label>
+    <input class="rounded p-2 text-black" type="text" required name="nacimiento" id="nacimiento" placeholder="DD/MM/AAAA"/>
+    <label for="observaciones">Observaciones</label>
+    <textarea class="rounded p-2 text-black" name="observaciones" id="observaciones" rows="3" placeholder="Comentarios que quieras añadir."></textarea>
+    <div class="flex justify-center items-center gap-4">
+    <label for="politica">Acepto la <a class="hover:underline" href="https://www.cdbustarviejo.com/politica-de-privacidad.html">política de privacidad</a></label>
+    <input class="rounded p-2" type="checkbox" required id="politica" name="politica" />
+    <input class="rounded p-2 bg-white text-slate-950 cursor-pointer hover:bg-bustar-orange-300 hover:transition-colors font-bold" type="submit" value="Enviar" />
+    <input class="rounded p-2 border-white border font-bold hover:bg-white hover:text-slate-950 hover:transition-colors cursor-pointer" type="reset" value="Cancelar" />
+</div>
+</div>
+</form>

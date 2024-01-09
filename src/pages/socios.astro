@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+import FormularioSocio from "../components/formulario-socio.astro"
+import Main from "../components/main.astro";
+import Article from "../components/article.astro";
+import Strong from "../components/strong.astro";
+---
+
+<Layout title="Socios - CD Bustarviejo">
+    <Main>
+        <img class="rounded-xl h-auto w-full" src="/public/cd-bustarviejo-nuevo-socio_orig.webp" alt="Uno de los socios del club recibiendo una camiseta conmemorativa por parte de dos empleados del club."/>
+        <h1 class="text-4xl font-bold text-bustar-orange-300 my-6">EL CLUB TE NECESITA</h1>
+        <h2 class="text-2xl font-bold text-slate-300 my-6">Tu ayuda es indispensable para que el proyecto del Club se siga desarrollando.</h2>
+        <Article>
+        <p>Fomentar el deporte, apostar por un estilo de vida saludable, el compañerismo, el trabajo en equipo, el respeto a entrenadores, árbitros, espectadores  y rivales, el juego limpio, etc. Son algunos de los valores que intentamos transmitir a nuestros y nuestras deportistas. <Strong>El Club Deportivo Bustarviejo es una entidad deportiva sin ánimo de lucro</Strong> y no recibe subvención alguna.</p>
+        <p>Si eres madre, padre, familiar de jugador o jugadora, vecino o vecina de Bustarviejo, visitante, etc. Y te gusta este proyecto, ayúdanos a que siga creciendo. Queremos lo mejor para la juventud de Bustarviejo y para ello necesitamos tu ayuda, <Strong>ANÍMATE Y ÚNETE por tan sólo 25 euros al año</Strong> (actualización Temporada 2021/22).</p>
+        <p>Con tu cuota nos ayudarás a hacer frente a los diferentes gastos que surgen durante la temporada, como la compra de balones, pagar a árbitros y entrenadores, contratar autobuses para desplazamientos, compra de material deportivo, etc.</p>
+        <p>Al pagar la cuota de Socio, el Club te entregará tu carnet de socio y un detalle de bienvenida para nuevos socios y socias.</p>
+        <p>Siendo socio del Club <Strong>tendrás derecho a asistir con  voz y voto a las Asambleas Generales</Strong> que se celebren y, entre otras ventajas, recibirás antes que nadie, el boletín informativo trimestral del Club vía mail, proyecto que comenzamos la pasada temporada con el ánimo de dar a conocer nuestra labor y que ha ayudado a duplicar la cifra de socios activos respecto a 2017, paso a paso.</p>
+        <ul class="list-disc pl-12">
+            <li>Para ser socio rellena el formulario de admisión al final de esta página</li>
+            <li>O bien, lo puedes descargar <a class="text-bustar-orange-300 hover:underline" href="https://www.cdbustarviejo.com/uploads/2/4/0/4/2404974/cd-bustarviejo-inscripcion-socios-2020-2021.pdf" target="_blank">aquí</a> y enviarlo a c.d.bustarviejo@hotmail.es</li>
+            <li>El pago de la cuota anual la puedes hacer en metálico o mediante transferencia a la siguiente cuenta bancaria: IBAN ES82 0049 4447 38 2010004048</li>
+            <li>El importe de la cuota anual es de 25€</li>
+            <li>Debes indicar en el concepto tu nombre y apellidos</li>
+        </ul>
+    </Article>
+        <FormularioSocio/>
+    </Main>
+</Layout>

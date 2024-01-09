@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Article from "../components/article.astro"
+import Main from "../components/main.astro"
+import Strong from "../components/strong.astro";
+---
+
+<Layout title="Proyecto - CD Bustarviejo">
+	<Main>
+        <img class="rounded-xl h-auto w-full" src="/public/proyecto-img.webp" alt="Chicos y chicas del equipo de Bustarviejo de baloncesto jugando."/>
+		<h1 class=" text-4xl font-bold text-bustar-orange-300 my-6">NUESTRO PROYECTO</h1>
+        <h2 class="text-2xl font-bold text-slate-300 my-6">Bases y Equipo Humano sobre las que se sustenta Nuestro Club</h2>
+        <Article>
+            <p>El Club Deportivo Bustarviejo nació en 1989 con una idea clara, colaborar en el aprendizaje de cada uno de sus miembros a partir de la práctica deportiva en el entorno de nuestro municipio, el pequeño pueblo de la Sierra de Madrid, Bustarviejo.</p>
+            <p>A día de hoy el club sigue en la misma línea que hace 31 años, la de lograr que el fútbol, el baloncesto, el pádel, o el deporte que sea, resulte ser una actividad integradora, un deporte que eduque a los más pequeños, ayudados por el ejemplo que los más mayores les ofrecen, haciendo que cada final de temporada, madres, padres y resto de miembros se puedan sentir orgullosas de cada participante en las diferentes disciplinas. <Strong>Nuestro auténtico objetivo es el formar personas</Strong> que, el día de mañana, entenderán el deporte como un mundo repleto de valores.</p>
+            <p>Por esto y más, os animamos a que subáis a conocernos, probéis en las categorías del club, os animéis a participar en las actividades ofrecidas y, sobre todo, os animéis a echar una mano, pues un club sin familias, no es un club.</p>
+            <p>Ya solo queda que, desde aquí, y en nombre de toda la Junta Directiva, os agradezcamos cada granito de arena que aportáis al Club, ya que esto, sin ti, no sería lo mismo.</p>
+            <p>Un fuerte abrazo.</p>
+        </Article>
+        <hr>
+        <h2 class="text-2xl font-bold text-slate-300 my-6">JUNTA DIRECTIVA</h2>
+        <Article>
+            <p>Desde Junio de 2020, el rumbo del Club recae en un nuevo equipo directivo, que pretende dar continuidad al excelente resultado de la anterior directiva, así como a la filosofía histórica de más de 30 años.</p>
+            <p>Bajo un <Strong>formato igualitario</Strong>, con tres participantes femeninas y tres masculinos, y liderados, por primera vez en nuestra historia, por una mujer, se tratará de aportar un punto más de ambición a nuestro proyecto, que le asegure una larga sostenibilidad, se pretende hacer foco en los siguientes puntos claves:</p>
+            <ul class="list-disc pl-12">
+                <li>Asegurar la máxima apertura a la participación y aportar nuestro granito de arena en aspectos sociales clave, como la <Strong>igualdad de género</Strong> y la <Strong>integración de los distintos grupos sociales</Strong> que conviven en nuestra población y pueblos vecinos.</li>
+                <li>Diseñar más servicios para nuestros socios y socias y colaboradores y colaboradoras.</li>
+                <li>Seguir creciendo y representando a Nuestro Pueblo.</li>
+                <li>Lograr la <Strong>generación de puestos de trabajo</Strong> y oportunidades de prácticas laborales.</li>
+                <li>Impulsar una pequeña red de voluntariado local.</li>
+                <li><Strong>Seguir diversificando nuestra propuesta deportiva</Strong>, más allá de los actuales equipos de: fútbol, baloncesto, introducción a la vida deportiva o campamentos puntuales de pádel.</li>
+            </ul>
+            <p>Además, para lograr una mayor profesionalidad en nuestra gestión diaria de toda nuestra masa de deportistas, disponemos de la figura de un Director Deportivo profesional, que coordina nuestra red de entrenadores donde se agregan cada año a varios jóvenes del propio Club, que aprenden e integran nuestra filosofía para su futura permanencia.</p>
+        </Article>
+	</Main>
+</Layout>
